@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мифические существа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🦄🐉 Мифические существа</h1>
+        <p>Добро пожаловать в мир мифических существ!</p>
+        <div class="search-box">
+
+            <input type="text" id="search" placeholder="🔍 Поиск мифического существа..." onkeyup="searchCards()">
+    </header>
+
+    <main>
+
+        <div class="card creature">
+            <h2>🦄 Единорог</h2>
+
+            <img src="unicorn.jpg" alt="Единорог">
+
+            <p>Единорог — красивое волшебное существо с одним рогом.</p>
+
+            <a href="unicorn.html">
+                <button>Подробнее</button>
+            </a>
+        </div>
+
+        <div class="card creature">
+            <h2>🐉 Дракон</h2>
+
+            <img src="dragon.jpg" alt="Дракон">
+
+            <p>Дракон — огромное мифическое существо, которое умеет летать и дышать огнём.</p>
+
+            <a href="dragon.html">
+                <button>Подробнее</button>
+            </a>
+        </div>
+
+        <div class="card creature">
+
+            <h2>🔥 Феникс</h2>
+
+            <img src="phoenix.jpg" alt="Феникс">
+
+            <p>
+                Феникс — легендарная птица, которая после смерти возрождается из собственного пепла.
+            </p>
+
+            <a href="phoenix.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🧜 Русалка</h2>
+
+            <img src="mermaid.jpg" alt="Русалка">
+
+            <p>
+                Русалка — мифическое существо с телом человека и хвостом рыбы, живущее в морях и океанах.
+            </p>
+
+            <a href="mermaid.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🦅 Грифон</h2>
+
+            <img src="griffin.jpg" alt="Грифон">
+
+            <p>
+                Грифон — мифическое существо с телом льва и головой и крыльями орла.
+            </p>
+
+            <a href="griffin.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🧚 Фея</h2>
+
+            <img src="fairy.jpg" alt="Фея">
+
+            <p>
+                Фея — маленькое волшебное существо с крыльями, которое охраняет природу и владеет магией.
+            </p>
+
+            <a href="fairy.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🐺 Оборотень</h2>
+
+            <img src="werewolf.jpg" alt="Оборотень">
+
+            <p>
+                Оборотень — человек, который по легендам может превращаться в огромного волка.
+            </p>
+
+            <a href="werewolf.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🧛 Вампир</h2>
+
+            <img src="vampire.jpg" alt="Вампир">
+
+            <p>
+                Вампир — мифическое существо, которое встречается во многих легендах и сказаниях.
+            </p>
+
+            <a href="vampire.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🐎 Пегас</h2>
+
+            <img src="pegasus.jpg" alt="Пегас">
+
+            <p>
+                Пегас — легендарный белый крылатый конь, символ свободы, скорости и вдохновения.
+            </p>
+
+            <a href="pegasus.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🐍 Гидра</h2>
+
+            <img src="hydra.jpg" alt="Гидра">
+
+            <p>
+                Гидра — огромное мифическое чудовище с множеством голов, жившее в древних болотах.
+            </p>
+
+            <a href="hydra.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🐙 Кракен</h2>
+
+            <img src="kraken.jpg" alt="Кракен">
+
+            <p>
+                Кракен — гигантское морское чудовище, которое, по легендам, живёт в глубинах океана.
+            </p>
+
+            <a href="kraken.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+        <div class="card creature">
+
+            <h2>🐂 Минотавр</h2>
+
+            <img src="minotaur.jpg" alt="Минотавр">
+
+            <p>
+                Минотавр — легендарное существо с телом человека и головой быка, жившее в огромном лабиринте.
+            </p>
+
+            <a href="minotaur.html">
+                <button>Подробнее</button>
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Vika Games</p>
+    </footer>
+
+    <script>
+
+        function searchCards() {
+
+            let input = document.getElementById("search");
+            let filter = input.value.toLowerCase();
+
+            let cards = document.getElementsByClassName("creature");
+
+            for (let i = 0; i < cards.length; i++) {
+
+                let title = cards[i].getElementsByTagName("h2")[0];
+
+                if (title.innerText.toLowerCase().includes(filter)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+body {
+    background: linear-gradient(to right, darkblue, rgb(46, 1, 46));
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: gold;
+    font-size: 50px;
+}
+
+h2 {
+    color: gold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px black;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 15px 0;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    width: 700px;
+    text-align: center;
+}
+
+.card ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.search-box {
+    text-align: center;
+    margin: 30px;
+}
+
+#search {
+    width: 350px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 15px gray;
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    #search {
+        width: 85%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+}
